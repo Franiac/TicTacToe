@@ -1,0 +1,10 @@
+<div class="flexCol">
+  <h1>
+    @if (isFirstMove$ | async) {
+      {{ (currentPlayer$ | async)?.name }}, you begin!
+    } @else {
+      {{ (currentPlayer$ | async)?.name }}, it is your turn!
+    }
+  </h1>
+  <ttt-board />
+</div>

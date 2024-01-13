@@ -1,0 +1,43 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+html {
+  font-family: $global-font-family;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $global-font-size;
+}
+
+html,
+body,
+ttt-app {
+  min-width: 50rem;
+  width: 100%;
+  height: 100%;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem 0rem;
+}

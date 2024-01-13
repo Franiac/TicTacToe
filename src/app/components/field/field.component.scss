@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .field {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;
+    font-weight: bold;
+    background-color: white;
+    user-select: none;
+    transition: 250ms background-color;
+
+    &[class~="highlight"]:hover {
+      background-color: azure;
+    }
+  }
+}

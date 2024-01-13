@@ -1,0 +1,9 @@
+.btn {
+  padding: 2rem 6rem;
+  transition: 250ms scale;
+
+  &:hover,
+  &active {
+    scale: 1.2;
+  }
+}

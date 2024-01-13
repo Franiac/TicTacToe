@@ -1,0 +1,5 @@
+<div class="field" [ngClass]="{highlight: player == null}" (click)="requestMove()">
+  @if (player != null) {
+  <span @iconAnim>{{ player.id | playerName }}</span>
+  }
+</div>

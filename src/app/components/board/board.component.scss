@@ -1,0 +1,9 @@
+.board {
+  width: 50rem;
+  height: 50rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}

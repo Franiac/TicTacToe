@@ -1,0 +1,11 @@
+<div class="flexCol">
+  <h1>GAME OVER</h1>
+  <div class="info" [ngClass]="{ winner: winner != null }">
+    @if (winner == null) {
+    It's a draw!
+    } @else {
+    THE WINNER IS {{ winner.name | uppercase }}!
+    }
+  </div>
+  <button type="button" class="btn" (click)="newGame()">Play Again</button>
+</div>

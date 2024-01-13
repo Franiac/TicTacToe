@@ -1,0 +1,12 @@
+$global-font-family: Arial, Helvetica, sans-serif;
+$global-font-size: 2.5rem;
+
+$control-background: darken($color: white, $amount: 6%);
+$control-background-focus: darken($color: white, $amount: 2%);
+
+$control-border: darken($color: white, $amount: 50%);
+$control-border-focus: darken($color: white, $amount: 70%);
+
+$control-error: rgba(255, 0, 0, 0.2);
+
+$winner: darken($color: #00FF00, $amount: 10%);

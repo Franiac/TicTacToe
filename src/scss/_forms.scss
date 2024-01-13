@@ -1,0 +1,19 @@
+form.frm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &.ng-submitted .formCol .inp.ng-invalid {
+    background-color: $control-error
+  }
+
+  .formCol {
+    label {
+      margin-right: 2rem;
+    }
+  }
+
+  .formColRight {
+    text-align: right;
+  }
+}

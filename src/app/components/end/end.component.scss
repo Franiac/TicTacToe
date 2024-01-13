@@ -1,0 +1,35 @@
+@import '../../../scss/variables';
+
+.btn {
+  padding: 2rem 6rem;
+  transition: 250ms scale;
+
+  &:hover,
+  &active {
+    scale: 1.2;
+  }
+}
+
+.info {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.winner {
+  color: $winner;
+  animation: winAnim 1s infinite;
+
+  @keyframes winAnim {
+    0% {
+      scale: 1
+    }
+
+    50% {
+      scale: 1.2
+    }
+
+    100% {
+      scale: 1
+    }
+  }
+}

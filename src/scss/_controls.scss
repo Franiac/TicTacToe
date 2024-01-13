@@ -1,0 +1,34 @@
+@import 'variables';
+
+button {
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+input[readonly] {
+  cursor: text;
+}
+
+.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn,
+.inp {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: $control-background;
+  border: 0.3rem solid $control-border;
+  transition: background-color 250ms, border-color 250ms;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: $control-background-focus;
+    border-color: $control-border-focus;
+  }
+}
