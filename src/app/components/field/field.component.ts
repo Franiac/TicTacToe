@@ -34,9 +34,18 @@ export class FieldComponent {
   @Output()
   public readonly moveRequested: EventEmitter<number> = new EventEmitter<number>();
 
-  public player: Player | null = null;
-
   private readonly _cdr: ChangeDetectorRef;
+
+  private _player: Player | null = null;
+
+  public get player(): Player | null {
+    return this._player;
+  }
+
+  public set player(value: Player) {
+    this._player = value;
+    this._cdr.markForCheck();
+  }
 
   public constructor(cdr: ChangeDetectorRef) {
     this._cdr = cdr;
@@ -44,10 +53,5 @@ export class FieldComponent {
 
   public requestMove(): void {
     this.moveRequested.emit(this.fieldIndex)
-  }
-
-  public setPlayer(player: Player): void {
-    this.player = player;
-    this._cdr.markForCheck();
   }
 }
